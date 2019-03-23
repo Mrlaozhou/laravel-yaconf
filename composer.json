@@ -1,0 +1,30 @@
+{
+    "name": "mrlaozhou/laravel-yc",
+    "description": "yaconf",
+    "homepage": "https://github.com/Mrlaozhou/laravel-yaconf.git",
+    "keywords": ["yaconf", "laravel", "mrlaozhou"],
+    "authors": [
+        {
+            "name": "Mrlaozhou",
+            "email": "zgsself@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mrlaozhou\\Yc\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrlaozhou\\Yc\\Providers\\LaravelServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
