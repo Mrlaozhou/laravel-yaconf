@@ -1,9 +1,15 @@
 <?php
 namespace Mrlaozhou\Yc;
 
-use \Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Mrlaozhou\Extend\ServiceProvider as ExtendServiceProvider;
 
-abstract class ServiceProvider extends BaseServiceProvider
+class ServiceProvider extends ExtendServiceProvider
 {
-
+    /**
+     * @throws \throwable
+     */
+    public function register()
+    {
+        $this->is_extension_loaded('yaconf');
+    }
 }
